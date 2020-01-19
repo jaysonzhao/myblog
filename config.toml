@@ -1,0 +1,47 @@
+baseURL = "/"
+languageCode = "zh-cmn-Hant"
+title = "HaoZhao"
+theme = "hugo-bingo"
+
+
+disableHugoGeneratorInject = true
+enableEmoji = true
+footnoteReturnLinkContents = "↩"
+hasCJKLanguage = true
+googleAnalytics = "UA-123-45"
+
+disableKinds = ["taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
+
+[permalinks]
+  post = "/posts/:slug/"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts"
+    weight = 20
+
+[params]
+  dateFormat = "2006-01-02"
+  mainSections = ["post"]
+
+  [params.gravatar]
+    email = "jaysonzhao@vip.qq.com"
+
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/jaysonzhao"
+    weight = 10
+
+  [[params.social]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/hao-ting-zhao-a7b8a316/"
+    weight = 20
